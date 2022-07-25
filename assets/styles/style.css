@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Quicksand:wght@400;700&display=swap');
+
+body{
+  font-family: 'Mochiy Pop One', sans-serif;
+  /* background-color: black */
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 55px;
+}
+
+.jumbotron p{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.jumbotron{
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.527),rgba(0,0,0,0.5)), url("../image/tomato.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.jumbotron li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.jumbotron a {
+  text-decoration: none;
+  color: white;
+}
+
+.jumbotron a:hover{
+  color: red;
+  font-weight: bold;
+}
