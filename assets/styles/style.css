@@ -1,21 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Oswald:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  overflow: auto;
+}
 
 body{
-  font-family: 'Mochiy Pop One', sans-serif;
-  /* background-color: black */
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 h1{
-  padding-top: 50px;
+  padding-top: 30px;
   color: white;
   text-align: center;
-  font-size: 55px;
+  margin: 0;
+  font-size: 100px;
 }
 
 .jumbotron p{
-  padding-top: 10px;
+  padding-top: 0px;
+  margin: 0px;
   text-align: center;
   color: white;
   font-size: 25px;
@@ -36,6 +45,7 @@ h1{
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
+  font-size: 18px;
 }
 
 .jumbotron a {
@@ -44,6 +54,198 @@ h1{
 }
 
 .jumbotron a:hover{
-  color: red;
   font-weight: bold;
+}
+
+.jumbotron ul{
+  margin: 0;
+  text-align: right;
+}
+
+aside{
+  float: right;
+  width: 20%;
+  padding: 20px;
+  height: auto;
+}
+
+aside .card{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.main h2{
+  font-size: 42px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.main h3{
+  padding-top: 30px;
+  padding-left: 10px;
+  font-size: 35px;
+  margin: 0;
+}
+
+.main p{
+  padding-left: 10px;
+  margin: 0;
+  font-size: 22px;
+}
+
+aside .card h5{
+  margin-top: 20px;
+  font-size: 20px;
+  margin: 0;
+}
+
+aside img{
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 200px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.main{
+  float: left;
+  width: 80%;
+}
+
+th{
+  text-align: left;
+}
+
+td{
+  padding-left: 20px;
+}
+
+.grid-container{
+  padding-top: 20px;
+  padding-left: 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+.grid-item{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  height: 250px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid-item h5,
+.grid-item p,
+.grid-item h6 {
+  margin: 0;
+  text-align: left;
+}
+
+.card{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 2);
+}
+
+.flex-display{
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-image{
+  flex-basis: 1;
+}
+
+.flex-image img{
+  height: 250px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+header{
+  display: inline;
+}
+
+.card p{
+  padding: 0;
+}
+
+footer{
+  margin-top: 30px;
+  padding: 20px;
+  color: black;
+  background-color: #CEE5D0;
+  text-align: center;
+  font-weight: bold;
+}
+
+article{
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+article .card{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+article h4{
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 2em;
+  margin: 0px;
+}
+
+article .card p{
+  font-size: 22px;
+  padding: 10px;
+}
+
+@media screen and (max-width:1000px) {
+  header,
+  aside{
+    width: 100%;
+    padding: 0;
+  }
+  .flex-display{
+    overflow-x: scroll;
+    padding: 0;
+  }
+  header h1{
+    font-size: 72px;
+  }
+  header .jumbotron p{
+    font-size: 24px;
+  }
+  .main{
+    width: 100%;
+    margin: 20px;
+  }
+  .wrapper h2{
+    padding: 0;
+  }
+  .main .grid-container{
+    padding: 0;
+  }
+  article{
+    padding: 0;
+  }
+  .main h3,.main p{
+    padding: 0;
+  }
+  .grid-container{
+    width: 80%;
+  }
 }
