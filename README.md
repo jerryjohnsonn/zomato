@@ -1,2 +1,4 @@
 # zomato
-Tugas akhir HTML di Dicoding
+Frontend Beginner Code, titled GoZomato
+
+Front-end testing for DevOps Class
